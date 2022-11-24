@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/styles/style.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -15,23 +15,23 @@
   <body>
     <div class="image">
       <button id="hmenu" class="hamburguer-menu color-yellow text-white">
-        <img src="/imgs/menu.png" alt="" />
+        <img src="./imgs/menu.png" alt="" />
       </button>
-      <div class="flex-column align-center">
-        <div class="item top-menu" id="tmenu">
+      <div class="flex-column align-center" style="margin-top: 32px">
+        <div class="top-menu" id="tmenu">
           <a href="#Quem somos" class="item-menu">Quem somos</a>
           <a href="#Galeria" class="item-menu">Galeria</a>
           <a href="#Eventos" class="item-menu">Eventos</a>
           <a href="#Patrocinadores" class="item-menu">Patrocinadores</a>
         </div>
-        <div class="item img">LOGO</div>
-        <h1 class="item text-white rockAndRoll" style="margin-top: 64px">
+        <div class="item img" style="margin-top: 128px">LOGO</div>
+        <h1 class="item text-white rockAndRoll" style="margin-top: 128px">
           CERVEJA, BURGER E ROCK AND ROLL
         </h1>
       </div>
     </div>
     <div class="flex-row">
-      <div class="col color-yellow flex-column align-center">
+      <div class="col color-yellow flex-column align-center patrocinio-left">
         <h2>Quer ser um patrocinador?</h2>
         <p>
           Se liga como é fácil, basta clicar no botão abaixo e fazer sua
@@ -39,7 +39,7 @@
         </p>
         <a href="#" class="color-orange button">Fazer Inscrição</a>
       </div>
-      <div class="col color-orange flex-column align-center">
+      <div class="col color-orange flex-column align-center patrocinio-right">
         <h2>Evite filas durante o evento!</h2>
         <p>
           Compre créditos online agora e use no dia do evento #Vaiter<strong
@@ -56,7 +56,7 @@
             <h2 class="flex-column align-center text-white">
               Quem somos?<a name="Quem somos"></a>
             </h2>
-            <p>
+            <p class="quem-somos">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               dapibus quam at posuere hendrerit. Nam in diam ligula. In posuere
               metus ut blandit viverra. Etiam lectus nunc, porta a ex vitae,
@@ -133,7 +133,7 @@
           <img class="card-image" src="imgs/event.png" alt="" />
           <div class="text-white color-yellow card-title">28/11 às 19h00</div>
           <h3>Stand-up Comedy<a name="Eventos"></a></h3>
-          <p>
+          <p class="card-body">
             Uma noite pra lá de engraçada com o ator Jonh Doe, estrelando em "É
             muita treta"
           </p>
