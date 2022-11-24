@@ -13,6 +13,22 @@
   </head>
 
   <body>
+    <div class="patrocinio" id="patrocinio">
+      <div class="card-patrocinio">
+        <span class="flex-column align-center" style="padding-bottom: 8px"
+          >Preencha os campos abaixo para registrar seu interesse em ser um de
+          nossos patrocinadores!
+        </span>
+        <input placeholder="Nome" class="input" />
+        <input placeholder="E-mail" class="input" />
+        <input placeholder="(00) 0 0000 0000" class="input" />
+        <textarea
+          placeholder="Escreva sua mensagem aqui"
+          class="input"
+        ></textarea>
+        <button class="btn-patrocinio" id="btn-modal" onclick="handleModal(false)">Enviar</button>
+      </div>
+    </div>
     <div class="image">
       <button id="hmenu" class="hamburguer-menu color-yellow text-white">
         <img src="./imgs/menu.png" alt="" />
@@ -37,7 +53,7 @@
           Se liga como é fácil, basta clicar no botão abaixo e fazer sua
           inscrição que entraremos em contato com você
         </p>
-        <a href="#" class="color-orange button">Fazer Inscrição</a>
+        <a href="#" class="color-orange button" id="btn-patrocinio" onclick="handleModal(true)">Fazer Inscrição</a>
       </div>
       <div class="col color-orange flex-column align-center patrocinio-right">
         <h2>Evite filas durante o evento!</h2>
@@ -270,6 +286,20 @@
   <script>
     const hmenu = document.getElementById("hmenu");
     const tmenu = document.getElementById("tmenu");
+    const formPatrocinio = document.getElementById("patrocinio")
+    const btnModal = document.getElementById("btn-modal")
+    const btnPatrocinio = document.getElementById("btn-patrocinio")
+
+    formPatrocinio.classList.add("hidden")
+
+    function handleModal(show){
+      if (show) {
+        formPatrocinio.classList.remove("hidden")
+      }else {
+        formPatrocinio.classList.add("hidden")
+      }
+    }
+   
 
     function mostraTopMenu() {
       if (tmenu.classList.contains("hidden")) {
